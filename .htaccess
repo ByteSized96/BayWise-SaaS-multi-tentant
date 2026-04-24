@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^g/([a-zA-Z0-9-]+)/?$ garage.php?slug=$1 [L,QSA]
+RewriteRule ^g/([a-zA-Z0-9-]+)/login/?$ login.php?garage=$1 [L,QSA]
+RewriteRule ^g/([a-zA-Z0-9-]+)/register/?$ register.php?garage=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php [L]
