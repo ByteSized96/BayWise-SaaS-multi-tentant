@@ -74,10 +74,6 @@ Example portals:
 /g/demo-garage
 /g/fastfit
 /g/london-mot
-Demo Admin Login
-Email: admin@baywise.test
-Password: password
-🛠 Tech Stack
 PHP (no frameworks)
 MySQL
 Tailwind CSS
